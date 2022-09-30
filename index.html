@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-external-car-park-entry">
+        <li class="text">External Car Park Entry</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-external-car-park-exit">
+        <li class="text">External Car Park Exit</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-car-park--bike-shelter">
+        <li class="text">Car Park &amp; Bike Shelter</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-main-entrance">
+        <li class="text">Main Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-main-car-park-area">
+        <li class="text">Main Car Park Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-rear-car-park-">
+        <li class="text">Rear Car park </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-side-gate--fire-exit">
+        <li class="text">Side Gate &amp; Fire Exit</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-foot-path-to-main-entrance-">
+        <li class="text">Foot Path to Main Entrance </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-lobby-">
+        <li class="text">Lobby </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-0015-reception-area">
+        <li class="text">00.15 Reception Area</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-0016-reception-office">
+        <li class="text">00.16 Reception Office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-0017-managers--office">
+        <li class="text">00.17 Managers  Office</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-a-0056-lift-lobby">
+        <li class="text">A-00.56 Lift Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-a-0055-stair-01">
+        <li class="text">A-00.55 Stair 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-a-0055-stair-01-landing">
+        <li class="text">A-00.55 Stair 01 Landing</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-gf-corridor-1">
+        <li class="text">GF Corridor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-gf-corridor-2">
+        <li class="text">GF Corridor 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-gf-corridor-3">
+        <li class="text">GF Corridor 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-0009-a1-large-lecture">
+        <li class="text">00.09 A1 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-0009-a2-large-lecture">
+        <li class="text">00.09 A2 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-0018-store">
+        <li class="text">00.18 Store</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-0052-wc-circulation">
+        <li class="text">00.52 WC Circulation</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-0006-acc-wc">
+        <li class="text">00.06 Acc. WC</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-0014-kitchen">
+        <li class="text">00.14 Kitchen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-0007-a3-medium-meeting">
+        <li class="text">00.07 A3 Medium Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-0013-a4-medium-meeting">
+        <li class="text">00.13 A4 Medium Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-gf-corridor-4">
+        <li class="text">GF Corridor 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-0057-stair-02">
+        <li class="text">00.57 Stair 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-a0057-stair-02-landing">
+        <li class="text">A00.57 Stair 02 Landing</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-b-0160-stair-02">
+        <li class="text">B-01.60 Stair 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-b-0113-lobby">
+        <li class="text">B-01.13 Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-b-1f-corridor-1">
+        <li class="text">B-1F Corridor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-b_0114-b5-small-meeting">
+        <li class="text">B_01.14 B5 Small Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-b-0109-b4-medium-meeting">
+        <li class="text">B-01.09 B4 Medium Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-b-0116-b6-interview-meeting">
+        <li class="text">B-01.16 B6 Interview Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-b-0108-b3-interview-meeting">
+        <li class="text">B-01.08 B3 Interview Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-b-0117-b7-small-meeting">
+        <li class="text">B-01.17 B7 Small Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-b-1f-corridor-2">
+        <li class="text">B-1F Corridor 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-b-0107-b2-large-lecture">
+        <li class="text">B-01.07 B2 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-b-0107-b1-large-lecture">
+        <li class="text">B-01.07 B1 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-b-1f-corridor-3">
+        <li class="text">B-1F Corridor 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-b-0151-wc-circulation">
+        <li class="text">B-01.51 WC Circulation</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-b-1f-corridor-4">
+        <li class="text">B-1F Corridor 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-b-0126-b8-interview-meeting">
+        <li class="text">B-01.26 B8 Interview Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-b-0127-b9-small-meeting">
+        <li class="text">B-01.27 B9 Small Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-b-0154-lift-lobby">
+        <li class="text">B-01.54 Lift Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-lift-internal-platform-">
+        <li class="text">Lift Internal Platform </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-b-0152-stair-01">
+        <li class="text">B-01.52 Stair 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-b-0152-stair-01-landing">
+        <li class="text">B-01.52 Stair 01 Landing</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-c-0252-stair-01-landing">
+        <li class="text">c-02.52 Stair 01 Landing</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-c-0252-stair-01">
+        <li class="text">C-02.52 Stair 01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-c-0254-lift-lobby">
+        <li class="text">C-02.54 Lift Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-c-2f-corridor-1">
+        <li class="text">C-2F Corridor 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-c-0219-c4-interview-meeting">
+        <li class="text">C-02.19 C4 Interview Meeting</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-c-2f-corridor-2">
+        <li class="text">C-2F Corridor 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-c-0213-cleaners-store">
+        <li class="text">C-02.13 Cleaners Store</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-c-0251-wc-circulation">
+        <li class="text">C-02.51 WC Circulation</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-c-0202-c1-large-lecture">
+        <li class="text">C-02.02 C1 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-c-0202-c2-large-lecture">
+        <li class="text">C-02.02 C2 Large Lecture</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-c-2f-corridor-3">
+        <li class="text">C-2F Corridor 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-c-2f-corridor-4">
+        <li class="text">C-2F Corridor 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-c-0205-lobby">
+        <li class="text">C-02.05 Lobby</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-c-0250-stair-02">
+        <li class="text">C-02.50 Stair 02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-c-0207-simulation-centre">
+        <li class="text">C-02.07 Simulation Centre</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-roof-entrance">
+        <li class="text">Roof Entrance</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-roof-plant-">
+        <li class="text">Roof Plant </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-roof-pv-panels">
+        <li class="text">Roof PV Panels</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-roof-rear-">
+        <li class="text">Roof Rear </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-roof_-high-level-view-">
+        <li class="text">Roof_ High Level View </li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
